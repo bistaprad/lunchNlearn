@@ -1,3 +1,0 @@
-require 'topic'
-
-require 'users'
