@@ -15,7 +15,7 @@ class Topic
 
 	def display_all()
 		puts "***********************************************"
-		puts "Topic Name: #{@discussion_topic}"
+		puts "Topic Name: #{@discussion_topic.upcase}"
 		#puts "Total Topics: #{@@total_topics}"
 		puts "Vote for this topic:  #{@total_vote_count}"
 		puts "Interested People: #{@interested_users}"

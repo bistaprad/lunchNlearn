@@ -26,7 +26,7 @@ class Users
 
   def display_all
     puts "***********************************************"
-    puts "User Name: #{@user_name}"
+    puts "User Name: #{@user_name.upcase}"
     puts "Votes Used: #{@votes_used}"
     puts "Topics in bucket: #{@topics_on_bucket}"
     puts "***********************************************"

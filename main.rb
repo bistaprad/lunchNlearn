@@ -1,13 +1,11 @@
 require 'topic'
 require 'users'
 require 'wrapper'
-require 'find'
-
 
 #List of topics
 
 title = ["Dijkistras Algo::", "Dymanic equilibria::", "Football::",
-		 "Continue you work::","Human Psychology::","Nationalist VS Patriotit::"]
+		 "Continue your work::","Human Psychology::","Nationalist VS Patriotit::"]
 
 #list of user name
 user_name = ["Barun Thapa  ", "Nikita Aacharya  ", "Susan Joshi  ",
@@ -32,21 +30,21 @@ user5 = Users.new(user_name[4])
 user6 = Users.new(user_name[5])
 user7 = Users.new(user_name[6])
 
-
-
+#Users are pick the topic of their interest
 add_vote_topic(user1, topic1)
 add_vote_topic(user3, topic1)
 add_vote_topic(user4, topic1)
 add_vote_topic(user5, topic1)
 add_vote_topic(user6, topic1)
-
+add_vote_topic(user6, topic3)
 
 add_vote_topic(user2, topic2)
 add_vote_topic(user2, topic4)
+add_vote_topic(user3, topic5)
 
 add_vote_topic(user3, topic3)
 add_vote_topic(user4, topic3)
-
+add_vote_topic(user5, topic5)
 
 add_vote_topic(user7, topic4)
 add_vote_topic(user7, topic1)
@@ -74,6 +72,9 @@ sorted_users = users.sort_by{|a| -a.votes_used}
 sorted_users.each{|u| u.display_all}
 
 
+
+
+
 #DISLAY ALL TOPIC INFORMATION
 =begin
 topic1.display_all
@@ -82,9 +83,6 @@ topic3.display_all
 topic4.display_all
 topic5.display_all
 topic6.display_all
-
-
-
 #DISPLAY ALL USER INFORMATION
 user1.display_all
 user2.display_all
